@@ -1,16 +1,58 @@
+@font-face {
+
+    font-family: metropolis-extra-bold-italic;
+    
+    src: url(./fuentes/metropolis.extra-bold-italic.otf);  
+}
+@font-face {
+
+    font-family: Metropolis-Bold;
+    
+    src: url(./fuentes/Metropolis-Bold.otf);  
+}
+@font-face {
+
+    font-family: Metropolis-Light;
+    
+    src: url(./fuentes/Metropolis-Light.otf);  
+}
+@font-face {
+
+    font-family: Metropolis-Regular;
+    
+    src: url(./fuentes/Metropolis-Regular.otf);  
+}
+@font-face {
+
+    font-family: Mula-ExtraLight;
+    
+    src: url(./fuentes/Mula-ExtraLight.otf);  
+}
+@font-face {
+
+    font-family: MulaR-Bold;
+    
+    src: url(./fuentes/MulaR-Bold.otf);  
+}
+@font-face {
+
+    font-family: MulaR-Regular;
+    
+    src: url(./fuentes/MulaR-Regular.otf);  
+}
 body {
     margin: 0;
     padding: 0;
-    background: url(./imagenes/fondo.jpg) no-repeat center top;
+    background: rgb(255, 255, 255);
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
 }
 
 .login-box {
-    width: 320px;
-    height: 420px;
-    background: rgb(2,45,158);
+    height: 575px;
+    width: 430px;
+    background: rgb(3, 47, 158);
     color: #fff;
     top: 50%;
     left: 50%;
@@ -18,15 +60,20 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    border-radius: 10px;
+    border-style: inset;
+
+
 }
 
 .login-box .avatar {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 20%;
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
+    margin-top: 70px;
 }
 
 .login-box h1 {
@@ -34,6 +81,8 @@ body {
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
+    font-family: metropolis-extra-bold-italic;
+    margin-top: 80px;
 }
 
 .login-box label {
@@ -41,49 +90,56 @@ body {
     padding: 0;
     font-weight: bold;
     display: block;
+    margin-top: 20px;
 }
-
+ /* logitud del boton de login */
 .login-box input {
     width: 100%;
     margin-bottom: 20px;
 }
-
+/* caja de botones de ingreso de credenciales */
 .login-box input[type="text"],
 .login-box input[type="password"] {
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
     border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 10px;
+    Border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 10px;
 }
+
+/* boton de inicio de sesion  */
 
 .login-box input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
-    background: #fff9f9;
+    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 18px;
     border-radius: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: MulaR-Regular;
 }
 
 .login-box input[type="submit"]:hover {
     cursor: pointer;
-    background: #030fab;
+    background: rgb(175, 175, 175);
     color: rgb(0, 0, 0);
-    
+    justify-content: center;
+    font-family: metropolis-extra-bold-italic;
 }
 
-.login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: rgb(187, 12, 12);
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.login-box a:hover {
-    color: rgb(255, 255, 255);
-}l
